@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alex Rivera | 3D Design Portfolio</title>
+    <meta name="description" content="Explore Alex Rivera's latest 3D design projects and creative works">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-logo">My Projects</div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="#" class="nav-link">project</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-category="web-development">
+    <div class="card-image">
+        <img src="https://placehold.co/400x250?text=Online+Banking+System" alt="Online Banking System">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Web Development</span>
+        <h3 class="card-title">Online Banking System</h3>
+        <p class="card-description">
+            Developed independently at an intermediate level. Key feature includes secure data storage in a MySQL database.
+        </p>
+        <div class="card-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">MySQL</span>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-card" data-category="software-development">
+    <div class="card-image">
+        <img src="https://placehold.co/400x250?text=Blood+Banking+System" alt="Online Banking System">
+        
+    </div>
+    <div class="card-content">
+        <span class="card-category">Java Application</span>
+        <h3 class="card-title">Blood Banking System</h3>
+        <p class="card-description">
+            Independently built using Java with NetBeans. This intermediate-level project handles blood inventory management.
+        </p>
+        <div class="card-tags">
+            <span class="tag">Java</span>
+            <span class="tag">NetBeans</span>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-card" data-category="android-development">
+    <div class="card-image">
+        <img src="https://placehold.co/400x250?text=Bakery+App" alt="Bakery App">
+        
+    </div>
+    <div class="card-content">
+        <span class="card-category">Android App</span>
+        <h3 class="card-title">Bakery App</h3>
+        <p class="card-description">
+            Built with Android Studio at an intermediate level, integrating Java and MySQL for backend data operations.
+        </p>
+        <div class="card-tags">
+            <span class="tag">Java</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Android Studio</span>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-card" data-category="full-stack">
+    <div class="card-image">
+        <img src="https://placehold.co/400x250?text=Hospital+Management+System" alt="Hospital Management System">
+        <div class="card-overlay">
+            <div class="card-actions">
+                <button class="action-btn" onclick="openModal('project4')">
+                   
+                </button>
+                <a class="action-btn" href="https://github.com/monikaj17082004/hospital-management-system" target="_blank" title="View Source Code">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-content">
+        <span class="card-category">Full-Stack</span>
+        <h3 class="card-title">Hospital Management System</h3>
+        <p class="card-description">
+            A full-stack hospital management project using PHP and MySQL with frontend technologies. <a href="https://github.com/monikaj17082004/hospital-managementsystem" target="_blank">View Source</a>
+        </p>
+        <div class="card-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+        </div>
+    </div>
+</div>
+
+
+               
+
+                
+
+                
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

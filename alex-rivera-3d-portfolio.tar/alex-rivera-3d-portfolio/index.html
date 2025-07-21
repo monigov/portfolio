@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera - 3D Portfolio</title>
+    <meta name="description" content="Interactive 3D Portfolio - Navigate through Projects, Achievements, and About">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="homepage">
+    <!-- 3D Scene Container -->
+    <div class="scene-container">
+        <!-- Background 3D Elements -->
+        <div class="bg-3d-elements">
+            <div class="floating-sphere sphere-1"></div>
+            <div class="floating-sphere sphere-2"></div>
+            <div class="floating-sphere sphere-3"></div>
+            <div class="floating-cube cube-1"></div>
+            <div class="floating-cube cube-2"></div>
+            <div class="geometric-pattern pattern-1"></div>
+            <div class="geometric-pattern pattern-2"></div>
+        </div>
+
+        <!-- Navigation Cards Container -->
+        <div class="cards-container">
+           <h1 class="portfolio-title">
+    <span class="title-line">Monika J</span>
+    <span class="title-subtitle typing-text" id="typed-subtitle"></span>
+</h1>
+
+            
+            <div class="navigation-cards">
+                <!-- Projects Card -->
+                <div class="nav-card projects-card" data-page="portfolio">
+                    <div class="card-face card-front">
+                        <div class="card-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3 class="card-title">Projects</h3>
+                        <p class="card-description">Explore my projects and creative works</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-preview">
+                            <div class="preview-item"></div>
+                            <div class="preview-item"></div>
+                            <div class="preview-item"></div>
+                        </div>
+                        <span class="click-text">Click to Enter</span>
+                    </div>
+                </div>
+
+                <!-- Achievements Card -->
+                <div class="nav-card achievements-card" data-page="skills">
+                    <div class="card-face card-front">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="card-title">Skills</h3>
+                        <p class="card-description">Skills, experience and milestones</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="achievement-bars">
+                            <div class="skill-bar"></div>
+                            <div class="skill-bar"></div>
+                            <div class="skill-bar"></div>
+                        </div>
+                        <span class="click-text">Click to Enter</span>
+                    </div>
+                </div>
+
+                <!-- About Card -->
+                <div class="nav-card about-card" data-page="about">
+                    <div class="card-face card-front">
+                        <div class="card-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="card-title">About</h3>
+                        <p class="card-description">Learn more about my journey and passion</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="profile-preview">
+                            <div class="avatar-placeholder"></div>
+                            <div class="info-lines">
+                                <div class="info-line"></div>
+                                <div class="info-line"></div>
+                            </div>
+                        </div>
+                        <span class="click-text">Click to Enter</span>
+                    </div>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="nav-card contact-card" data-page="contact">
+                    <div class="card-face card-front">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="card-title">Contact</h3>
+                        <p class="card-description">Let's collaborate on your next project</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="contact-preview">
+                            <div class="contact-icon-small">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div class="contact-lines">
+                                <div class="contact-line"></div>
+                                <div class="contact-line"></div>
+                            </div>
+                        </div>
+                        <span class="click-text">Click to Enter</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Instructions -->
+            
+        </div>
+
+        
+
+            
+        </div>
+
+        <!-- Ambient Particles -->
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader-3d">
+            <div class="loader-cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+        <p class="loading-text">Loading 3D Portfolio...</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
